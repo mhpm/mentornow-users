@@ -1,0 +1,6 @@
+{
+  "appId": "com.mentornow.users",
+  "appName": "MentorNow",
+  "bundledWebRuntime": false,
+  "webDir": "dist"
+}
