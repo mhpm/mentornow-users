@@ -7,13 +7,13 @@
                         <div align="center" class="perfilcard">
                             <div class="subcard"></div>
                             <figure class="image is-128x128">
-                                <img class="imgcard" src="../assets/mentor1.png" alt="Image" width="128">
+                                <img class="rounded imgcard" :src="mentor.picture.large" alt="Image">
                             </figure>
                             <br>
-                            <span class="is-size-6">Bethany Perez Broque</span>
+                                <span class="is-size-5">{{mentor.name.first}} {{mentor.name.last}}</span>
                             <br>
-                            <span class="is-size-7 has-text-weight-light">450 Estrellas - 134 Comentarios</span><br>
-                            <span class="is-size-7 has-text-weight-light">Mentorias impartidas: 45</span><br>
+                            <span class="is-size-7 has-text-weight-light">{{mentor.stars}} Estrellas - {{mentor.comments}} Comentarios</span><br>
+                            <span class="is-size-7 has-text-weight-light">Mentorias impartidas: {{mentor.mentoriesDone}}</span><br>
                             <span class="icon has-text-grey-light" v-for="i in 5" :key="i">
                                 <fa name="star" scale="1" />
                             </span><br>
@@ -32,6 +32,7 @@
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, deleniti, nemo tempora neque, quasi animi nihil amet doloremque eligendi reiciendis ea et a sit tempore id quibusdam facere excepturi explicabo!
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolores soluta cupiditate qui libero repellendus ea velit, aspernatur ullam minus, quo provident doloremque consectetur laudantium? Quidem voluptatum voluptate at nihil.
                         </div>
+                        <div class="has-text-white-ter has-text-centered font-weight-light">ver mas ...</div>
                     </div>
                 </div>
                 <div class="columns">
@@ -47,7 +48,7 @@
                     <div class="column">
                         <div class="subtitle has-text-grey-lighter has-text-centered">Comentarios</div>
                         <ul>
-                            <commentcard :User="user" v-for="(user, index) in users" :key="index+1"/>
+                            <commentcard :User="user" v-for="(user, index) in users.slice(10, 14)" :key="index+1"/>
                         </ul>
                         <div class="has-text-white-ter has-text-centered font-weight-light">ver mas ...</div>
                     </div>
@@ -61,23 +62,29 @@
     export default {
         data(){
             return{
-                users:[]
+                users:this.$store.state.mentors.results,
+                mentor:null
             }
         },
+        created(){
+            this.GetMentor(this.$route.params.id)
+            window.scrollTo(0, 0);
+        },
         mounted(){
-            this.GetUsers()
+            this.GetComments()
         },
         methods:{
-            Agendar(){},
-            GetUsers(){
-                var vm = this;
-                $.ajax({
-                    url: 'https://randomuser.me/api/?results=5',
-                    dataType: 'json',
-                    success(data) {
-                        vm.users = data.results;
-                    }
-                });
+            Agendar(){
+                console.log('agendar');
+                this.$router.push({ path: 'Agendar' })
+            },
+            GetMentor(id){
+                this.mentor = this.$store.state.mentors.results.filter(mentor => {
+                    return mentor.id.value == id
+                })
+                this.mentor = this.mentor[0]
+            },
+            GetComments(){
             }
         }
     }
@@ -85,14 +92,16 @@
 
 <style scoped>
 .subcard{
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 38%, 0 71%);
+    clip-path: polygon(0 0, 100% 0, 100% 38%, 0 71%);
     position: relative;
-    background-color: rgba(255, 255, 255, 0.4);
+    background-color: rgba(254, 179, 7, 0.3);
     width: 100%;
-    height: 100px;
+    height: 200px;
 }
 
 .imgcard{
-    margin-top: -65px;
+    margin-top: -145px;
     border-radius: 80px;
 }
 

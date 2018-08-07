@@ -1,5 +1,5 @@
 <template>
-    <li v-if="User"  @click="">
+    <li v-if="User">
         <article class="media">
             <div class="media-left">
                 <figure class="image is-64x64">
@@ -8,20 +8,16 @@
             </div>
             <div class="media-content">
                 <div class="content">
-                    <p>
                         <span class="is-size-5 has-text-white-ter">{{User.name.first}} {{User.name.last}}</span>
-                        <nav class="level is-mobile" style="margin-top:10px">
-                            <div class="level-left">
-                                    <a class="level-item"><fa class="has-text-white" name="star" scale="0.9" /></a>
-                                    <a class="level-item"><fa class="has-text-white" name="star" scale="0.9" /></a>
-                                    <a class="level-item"><fa class="has-text-white" name="star" scale="0.9" /></a>
-                                    <a class="level-item"><fa name="star" scale="0.9" /></a>
-                                    <a class="level-item"><fa name="star" scale="0.9" /></a>
-                            </div>
-                        </nav>
-                    <span style="margin-top:-10px" class="has-text-white-ter has-text-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero earum quis consectetur repellendus, maxime aut enim distinctio recusandae praesentium.</span><br>
+                        <div>
+                            <span><fa class="has-text-warning" name="star" scale="0.9" /></span>
+                            <span style="padding-left:5px;"><fa class="has-text-warning" name="star" scale="0.9" /></span>
+                            <span style="padding-left:5px;"><fa class="has-text-warning" name="star" scale="0.9" /></span>
+                            <span style="padding-left:5px;"><fa class="has-text-dark" name="star" scale="0.9" /></span>
+                            <span style="padding-left:5px;"><fa class="has-text-dark" name="star" scale="0.9" /></span>
+                        </div>
+                    <span style="margin-top:5px" class="has-text-white-ter has-text-weight-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero earum quis consectetur repellendus, maxime aut enim distinctio recusandae praesentium.</span><br>
                     <span class="is-pulled-right has-text-white-ter has-text-weight-light">Leer mas...</span>
-                    </p>
                 </div>
             </div>
         </article>

@@ -13,6 +13,7 @@ import Favorites from './views/Favorites.vue'
 import Perfil from './views/Perfil.vue'
 import Categories from './views/Categories.vue'
 import MentorPerfil from './views/MentorPerfil.vue'
+import Agendar from './views/Agendar.vue'
 
 Vue.use(Router)
 
@@ -26,11 +27,12 @@ export default new Router({
     { path: '/Welcome', name: 'Welcome', component: Welcome },
     { path: '/Main', name: 'Main', component: Main },
     { path: '/Materias', name: 'Materias', component: Materias },
-    { path: '/Mentors', name: 'Mentors', component: Mentors },
     { path: '/Favorites', name: 'Favorites', component: Favorites },
     { path: '/Perfil', name: 'Perfil', component: Perfil },
     { path: '/Categories', name: 'Categories', component: Categories },
-    { path: '/MentorPerfil', name: 'MentorPerfil', component: MentorPerfil }
+    { path: '/Mentors', name: 'Mentors', component: Mentors },
+    { path: '/MentorPerfil/:id', name: 'MentorPerfil', component: MentorPerfil, params: true },
+    { path: '/Agendar', name: 'Agendar', component: Agendar }
   ],
   mode:'history'
 })

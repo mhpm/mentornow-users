@@ -17,14 +17,22 @@
     export default {
         data(){
             return{
-                mentors:[],
-                searchInput:null
+                searchInput:null,
+                mentors:[]
             }
         },
-        mounted() {
-            this.GetRamdon()
+        created() {
+            this.GetMentors()
         },
         methods:{
+            GetMentors(){
+                this.$store.state.mentors.results.forEach(mentor => {
+                    mentor.stars = Math.floor(Math.random() * (100 - 0)) + 0;
+                    mentor.comments = Math.floor(Math.random() * (100 - 0)) + 0;
+                    mentor.mentoriesDone = Math.floor(Math.random() * (100 - 0)) + 0;
+                });
+                this.mentors = this.$store.state.mentors.results
+            },
             GetRamdon(){
                 var vm = this;
                 $.ajax({
@@ -37,6 +45,7 @@
                             data.results[i].mentoriesDone = Math.floor(Math.random() * (100 - 0)) + 0;
                         }
                         vm.mentors = data.results;
+                        console.log(vm.mentors)
                     }
                 });
             }

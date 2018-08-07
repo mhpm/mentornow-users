@@ -1,35 +1,96 @@
-[debug] [2018-07-23T23:29:09.867Z] ----------------------------------------------------------------------
-[debug] [2018-07-23T23:29:09.875Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sigsa\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
-[debug] [2018-07-23T23:29:09.876Z] CLI Version:   3.19.3
-[debug] [2018-07-23T23:29:09.876Z] Platform:      win32
-[debug] [2018-07-23T23:29:09.876Z] Node Version:  v10.1.0
-[debug] [2018-07-23T23:29:09.878Z] Time:          Mon Jul 23 2018 18:29:09 GMT-0500 (Central Daylight Time (Mexico))
-[debug] [2018-07-23T23:29:09.878Z] ----------------------------------------------------------------------
+[debug] [2018-08-01T15:03:44.256Z] ----------------------------------------------------------------------
+[debug] [2018-08-01T15:03:44.261Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sigsa\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-08-01T15:03:44.262Z] CLI Version:   3.19.3
+[debug] [2018-08-01T15:03:44.262Z] Platform:      win32
+[debug] [2018-08-01T15:03:44.262Z] Node Version:  v10.1.0
+[debug] [2018-08-01T15:03:44.264Z] Time:          Wed Aug 01 2018 10:03:44 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:03:44.264Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2018-07-23T23:29:09.976Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2018-07-23T23:29:09.977Z] > authorizing via signed-in user
-[debug] [2018-07-23T23:29:09.982Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2018-07-23T23:29:09.982Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- { refresh_token: '1/fL9arQ5XXdoz3cpgxzrjlBI9RJkODbjRyzetTHrGdX0',
+[debug] [2018-08-01T15:03:44.287Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-01T15:03:44.287Z] > authorizing via signed-in user
+[debug] [2018-08-01T15:03:44.289Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-01T15:03:44.290Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/X3M-H5fbwqqP9xIemB0wzKicO0_SHhzP75tI_uRTl00',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Mon Jul 23 2018 18:29:09 GMT-0500 (Central Daylight Time (Mexico))
-[debug] [2018-07-23T23:29:12.336Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-23T23:29:12.381Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mentornow-users  
+ Wed Aug 01 2018 10:03:44 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:03:45.810Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-01T15:03:45.844Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mentornow-users  
   
- Mon Jul 23 2018 18:29:12 GMT-0500 (Central Daylight Time (Mexico))
-[debug] [2018-07-23T23:29:13.608Z] <<< HTTP RESPONSE 200
-[debug] [2018-07-23T23:29:13.610Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mentornow-users/tokens  
+ Wed Aug 01 2018 10:03:45 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:03:46.759Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-01T15:03:46.761Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mentornow-users/tokens  
   
- Mon Jul 23 2018 18:29:13 GMT-0500 (Central Daylight Time (Mexico))
-[debug] [2018-07-23T23:29:14.940Z] <<< HTTP RESPONSE 200
+ Wed Aug 01 2018 10:03:46 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:03:47.466Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Deploying to 'mentornow-users'...
 [info] 
 [info] i  deploying hosting
 [info] i  hosting: preparing dist directory for upload...
-[debug] [2018-07-23T23:29:18.704Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/mentornow-users/uploads/-LI8TRDBez6wR-nlT62J?fileCount=31&message=  
+[debug] [2018-08-01T15:03:49.853Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/mentornow-users/uploads/-LIq02NQPDzdwRA60m6C?fileCount=30&message=  
   
- Mon Jul 23 2018 18:29:18 GMT-0500 (Central Daylight Time (Mexico))
+ Wed Aug 01 2018 10:03:49 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:06:32.430Z] Error: socket hang up
+    at createHangUpError (_http_client.js:313:15)
+    at TLSSocket.socketOnEnd (_http_client.js:409:23)
+    at TLSSocket.emit (events.js:187:15)
+    at TLSSocket.EventEmitter.emit (domain.js:442:20)
+    at endReadableNT (_stream_readable.js:1086:12)
+    at process._tickCallback (internal/process/next_tick.js:63:19)
+[error] 
+[error] Error: Server Error. socket hang up
+[debug] [2018-08-01T15:26:30.830Z] ----------------------------------------------------------------------
+[debug] [2018-08-01T15:26:30.834Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Sigsa\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase deploy
+[debug] [2018-08-01T15:26:30.834Z] CLI Version:   3.19.3
+[debug] [2018-08-01T15:26:30.834Z] Platform:      win32
+[debug] [2018-08-01T15:26:30.834Z] Node Version:  v10.1.0
+[debug] [2018-08-01T15:26:30.836Z] Time:          Wed Aug 01 2018 10:26:30 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:26:30.836Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-01T15:26:30.856Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-01T15:26:30.857Z] > authorizing via signed-in user
+[debug] [2018-08-01T15:26:30.860Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mentornow-users  
+  
+ Wed Aug 01 2018 10:26:30 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:26:31.410Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-01T15:26:31.414Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mentornow-users/tokens  
+  
+ Wed Aug 01 2018 10:26:31 GMT-0500 (Central Daylight Time (Mexico))
+[info] 
+[warn] !  Your CLI authentication needs to be updated to take advantage of new features.
+[warn] !  Please run firebase login --reauth
+[info] 
+[debug] [2018-08-01T15:26:52.525Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2018-08-01T15:26:52.526Z] > authorizing via signed-in user
+[debug] [2018-08-01T15:26:52.527Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2018-08-01T15:26:52.528Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1/X3M-H5fbwqqP9xIemB0wzKicO0_SHhzP75tI_uRTl00',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Aug 01 2018 10:26:52 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:26:53.917Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-01T15:26:54.006Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/mentornow-users  
+  
+ Wed Aug 01 2018 10:26:54 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:26:54.989Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-01T15:26:54.990Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/mentornow-users/tokens  
+  
+ Wed Aug 01 2018 10:26:54 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:26:55.686Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'mentornow-users'...
+[info] 
+[info] i  deploying hosting
+[info] i  hosting: preparing dist directory for upload...
+[debug] [2018-08-01T15:27:10.546Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/mentornow-users/uploads/-LIq5OM6g7ZawoyI9c6o?fileCount=30&message=  
+  
+ Wed Aug 01 2018 10:27:10 GMT-0500 (Central Daylight Time (Mexico))
+[debug] [2018-08-01T15:27:36.092Z] Error: connect ETIMEDOUT 23.251.151.130:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1161:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 23.251.151.130:443

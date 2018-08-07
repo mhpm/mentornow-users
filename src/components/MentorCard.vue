@@ -1,5 +1,5 @@
 <template>
-    <li v-if="Mentor" @click="submit()">
+    <li v-if="Mentor" @click="submit(Mentor.id.value)">
         <article class="media">
             <div class="media-left">
                 <figure class="image is-64x64">
@@ -33,8 +33,9 @@
     export default {
         props:['Mentor'],
         methods:{
-             submit(){
-                this.$router.push({ name: 'MentorPerfil', params: { Id: 123 }});
+             submit(id){
+                console.log(id);
+                this.$router.push({ name: 'MentorPerfil', params: { id: id }});
             }
         }
     }

@@ -1,5 +1,5 @@
 <template>
-    <li>
+    <li @click="submit(Materia)">
         <div class="title is-4 has-text-warning">{{Materia}}</div>
         <div class="subtitle is-6 has-text-grey-lighter">{{Text}}</div>
     </li>
@@ -7,7 +7,13 @@
 
 <script>
     export default {
-        props:['Materia', 'Text']
+        props:['Materia', 'Text'],
+         methods:{
+            submit(index){
+                console.log(index);
+                
+            }
+        }
     }
 </script>
 
