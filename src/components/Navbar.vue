@@ -1,8 +1,8 @@
 <template>
-  <div class="navbar is-fixed-bottom">
-        <div align="center" class="columns">
-            <div class="column">
-                <div class="columns is-variable is-0 is-mobile">
+    <div class="columns is-mobile is-centered">
+        <div class="column is-one-mobile is-half-desktop">
+            <div class="navbar is-fixed-bottom">
+                <div align="center" class="columns is-variable is-0 is-mobile">
                     <div class="column">
                         <router-link to="/Main">
                             <a class="navbar-item" >

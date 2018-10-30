@@ -76,7 +76,7 @@
         methods:{
             Agendar(){
                 console.log('agendar');
-                this.$router.push({ path: 'Agendar' })
+                this.$router.push({ path: '../Agendar' })
             },
             GetMentor(id){
                 this.mentor = this.$store.state.mentors.results.filter(mentor => {

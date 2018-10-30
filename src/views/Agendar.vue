@@ -6,6 +6,11 @@
                 <ul>
                     <materiacard Materia="Matematicas" Text="23 Mentores" v-for="(n, index) in 3" :key="index+1"/>
                 </ul>
+                <div class="field is-grouped is-grouped-centered">
+                    <p class="control">
+                        <router-link class="has-text-white-ter font-weight-light putbottom" to="/">Cancelar</router-link>
+                    </p>
+                </div>
             </div>
         </div>
     </div>

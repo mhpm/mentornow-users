@@ -3,8 +3,8 @@
       <transition mode="out-in" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut" :duration="100">
         <router-view/>
       </transition>
-      <app-navbar v-show="$route.path == '/Main' || $route.path == '/Categories' || $route.path == '/Mentors' || $route.path == '/Favorites' || $route.path == '/Perfil' || $route.path == '/MentorPerfil'"/>
-    </div>
+      <app-navbar v-show="$route.name == 'Main' || $route.name == 'Categories' || $route.name == 'Mentors' || $route.name == 'Favorites' || $route.name == 'Perfil' || $route.name == 'MentorPerfil'"/>
+  </div>
 </template>
 
 <script>
@@ -13,10 +13,12 @@
       return{
       }
     },
+    created(){
+    },
     computed:{
       sectionClass(){
-        let route = this.$route.path;
-        if(route == '/Main' || route == '/Perfil' || route == '/MentorPerfil'){
+        let route = this.$route.name;
+        if(route == 'Main' || route == 'Perfil' || route == 'MentorPerfil'){
           return{'': true}
         }else{
           return{'section': true}

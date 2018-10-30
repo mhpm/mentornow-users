@@ -1,7 +1,7 @@
 <template>
     <div class="main">
         <div class="columns is-mobile is-centered">
-            <div class="column is-one-mobile is-two-third-tablet is-two-desktop">
+            <div class="column is-one-mobile is-half-desktop">
                 <app-carousel />
                 <app-searchbar msg="¿En que asignatura necesitas ayuda?">
                     <input class="input searchInput" type="text" placeholder="Buscar..." v-model="searchInput" v-on:keyup.13="submit"/>
